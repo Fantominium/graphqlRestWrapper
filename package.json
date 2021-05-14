@@ -4,8 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js --watch src/",
+    "start": "nodemon --exec babel-node -- ./src/index.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.13.16",
+    "@babel/core": "^7.14.2",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "apollo-datasource-rest": "^0.13.0",
+    "apollo-server": "^2.24.0",
+    "apollo-server-express": "^2.24.0",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "graphql-import": "^1.0.2",
+    "graphql-tools": "^4.0.8"
+  }
 }
