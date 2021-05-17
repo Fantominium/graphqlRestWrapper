@@ -2,7 +2,6 @@ require("dotenv").config()
 import  RickAndMortyAPI from "./datasources/RickAndMortyAPI"
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
-
 import typeDefs from "./schema"
 
 import resolvers from "./resolvers"
