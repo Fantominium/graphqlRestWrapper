@@ -26,11 +26,28 @@ type AllCharacters {
     characters: [Chararters]
 }
 
+
+type User {
+  id: ID,
+  name: String
+  lastName: String
+ 
+}
+
+input CreateUserInput {
+  name: String
+  lastName: String
+}
+
   type Query {
     hello: String
     getCharacters: AllCharacters
+    getUsers: [User]
   }
 
+  type Mutation {
+    createUser(input: CreateUserInput!): User
+  }
  
 
 `

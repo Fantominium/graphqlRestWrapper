@@ -1,5 +1,6 @@
 require("dotenv").config()
 import  RickAndMortyAPI from "./datasources/RickAndMortyAPI"
+import User from './datasources/User'
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 import typeDefs from "./schema"
@@ -7,7 +8,8 @@ import typeDefs from "./schema"
 import resolvers from "./resolvers"
 const server = new ApolloServer({ 
     dataSources: () => ({
-        rickAndMortyAPI: new RickAndMortyAPI()
+        rickAndMortyAPI: new RickAndMortyAPI(),
+        usersApi: new User()
     }),
     typeDefs, 
     resolvers 
