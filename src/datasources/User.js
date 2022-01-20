@@ -24,7 +24,7 @@ class User {
     console.log(data, 'data')
     const userWithId = {
       name: data.input.name,
-      lastname: data.input.lastBame,
+      lastName: data.input.lastName,
       id: shortid.generate(),
     }
     return this.api.post('/users', userWithId).then(res => res.data)
