@@ -38,5 +38,13 @@
       "lastName": "gotsell",
       "id": "YAc3vkStn"
     }
-  ]
+  ],
+  "todos": [
+    {
+      "id": 1233,
+      "content": "Water the orchids",
+      "category": "Personal",
+      "completed": false
+    }
+]
 }

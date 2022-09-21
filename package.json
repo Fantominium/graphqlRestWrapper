@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "dev": "npm-run-all --parallel dev:*",
     "dev:api": "nodemon --exec 'babel-node  ./src/index.js'",
     "dev:json": "json-server --watch db.json"

@@ -8,6 +8,12 @@ type Info {
         next: String
         prev: String
 }
+type Todo {
+  id: ID,
+  content: String,
+  category: String,
+  completed: Boolean,
+}
 
 type Chararters {
     id: ID
@@ -43,7 +49,9 @@ input CreateUserInput {
     hello: String
     getCharacters: AllCharacters
     getUsers: [User]
+    getTodos: [Todo]
   }
+
 
   type Mutation {
     createUser(input: CreateUserInput!): User
