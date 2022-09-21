@@ -50,6 +50,7 @@ input CreateUserInput {
     getCharacters: AllCharacters
     getUsers: [User]
     getTodos: [Todo]
+    findTodo(id:Int): Todo
   }
 
 

@@ -14,5 +14,8 @@ class Todo {
          console.log(response.data, "Data")
          return response.data || {"nothing": String};
       }
+      find(id) {
+        return this.api.get(`/todos/${id}`).then(res => res.data)
+      }
 }
 module.exports = Todo

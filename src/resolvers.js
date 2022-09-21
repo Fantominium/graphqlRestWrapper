@@ -6,6 +6,7 @@ module.exports = {
       getCharacters: (_, __, { dataSources }) =>  dataSources.rickAndMortyAPI.getCharacters(),
       getUsers: (_, __, { dataSources }) =>  dataSources.usersApi.listUsers(),
       getTodos: (_, __, { dataSources }) => dataSources.todosApi.listTodos(),
+      findTodo:  (_, __, { dataSources }) => dataSources.todosApi.findTodo(id),
     },
     Mutation: {
       createUser: (_, __, { dataSources }) =>  {

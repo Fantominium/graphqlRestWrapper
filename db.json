@@ -48,19 +48,19 @@
     },
     {
       "id": 1233,
-      "content": "Water the orchids",
+      "content": "Clean the bathroom",
       "category": "Personal",
       "completed": false
     },
     {
       "id": 1293,
-      "content": "Water the orchids",
+      "content": "Cook the Risotto",
       "category": "Personal",
       "completed": false
     },
     {
       "id": 1231,
-      "content": "Water the orchids",
+      "content": "Fold Laundry",
       "category": "Personal",
       "completed": false
     }
