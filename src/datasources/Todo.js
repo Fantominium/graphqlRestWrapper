@@ -1,5 +1,6 @@
 import axios from 'axios'
 import shortid from 'shortid'
+import {Todos} from "./db.json"
 
 class Todo {
     constructor() {
@@ -14,8 +15,12 @@ class Todo {
          console.log(response.data, "Data")
          return response.data || {"nothing": String};
       }
-      find(id) {
-        return this.api.get(`/todos/${id}`).then(res => res.data)
+      async find(id) {
+        const {data} = await this.api.get(`/todos/${id}`)
+        return data;
+      }
+      delete(id) {
+        return this.api.delete(`/todos/${id}`).then(() => ({ id }))
       }
 }
 module.exports = Todo

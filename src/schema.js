@@ -50,9 +50,10 @@ input CreateUserInput {
     getCharacters: AllCharacters
     getUsers: [User]
     getTodos: [Todo]
-    findTodo(id:Int): Todo
-  }
+    findTodo(id: ID!): Todo
+    deleteTodo(id: String): String
 
+  }
 
   type Mutation {
     createUser(input: CreateUserInput!): User
